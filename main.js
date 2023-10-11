@@ -41,5 +41,5 @@ const buscarPokemon = (nome) => {
                 `);
             });
         }
-    } 
+    }
 }

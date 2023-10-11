@@ -56,6 +56,11 @@ main {
     cursor: pointer;
 }
 
+.botaoBuscar {
+    display: flex;
+    gap: 5px;
+}
+
 .cards {
     width: 50%;
     display: grid;

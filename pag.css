@@ -52,8 +52,10 @@ p {
 }
 
 .opcoes{
+    justify-content: center;
+    align-items: center;
     display: flex;
-    gap: 24px;
+    gap: 20px;
 }
 
 .botao {
@@ -89,7 +91,7 @@ p {
 .imagem2 img {
     border-radius: 10px; 
     max-width: 320px; 
-    max-height: 320px; 
+    max-height: 180px; 
     display: block;
     margin: 0 auto;
 }
@@ -106,20 +108,12 @@ p {
     font-size: 1.2rem;
 }
 
-.imagem {
+.imagem, .imagem2 {
     overflow: hidden;
     transition: transform 0.3s;
 }
 
-.imagem:hover {
-    transform: scale(1.1); 
+.imagem:hover, .imagem2:hover {
+    transform: scale(1.1);
 }
 
-.imagem2 {
-    overflow: hidden;
-    transition: transform 0.3s; 
-}
-
-.imagem2:hover {
-    transform: scale(1.1); 
-}
