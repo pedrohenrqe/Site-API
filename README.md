@@ -1,5 +1,7 @@
 # Pokémon TCG Developers - Aplicação Web
 
+![image](https://github.com/pedrohenrqe/Site-API/assets/113317866/f0ce5587-97ae-4564-b52a-f6e1d73a9447)
+
 
 ## Sobre
 
