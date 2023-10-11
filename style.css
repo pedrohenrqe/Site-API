@@ -30,18 +30,30 @@ main {
     margin-top: 50px;
 }
 
+.buscar {
+    display: flex;
+    position: relative;
+}
+
 .nome {
+    display: flex;
     width: 300px;
-    font-size: 1.2rem;
+    padding: 10px;
     border: 1px solid #000;
     border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 .botao {
-    width: 100px;
-    font-size: 1.2rem;
+    display: flex;
+    padding: 10px 20px;
+    background-color: #0090F9;
+    color: white;
+    text-decoration: none;
     border: 1px solid #000;
     border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .cards {
@@ -63,18 +75,22 @@ main {
 
 .voltar {
     position: relative;
-}
-
-.voltarInicio {
-    margin: 30px auto;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     display: inline-block;
-    padding: 10px 20px;
     background-color: #0090F9;
     color: white;
-    text-decoration: none;
     border-radius: 5px;
     font-size: 1.2rem;
     position: absolute;
-    right: 20px;    
+    left: -50%;
+    height: 100%;
+}
+
+.botaoVoltar {
+    color: white;
+    text-decoration: none;
+    padding: 20px 12px;
+    height: 20px;
 }

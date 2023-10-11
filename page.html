@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +14,19 @@
     </header>
 
     <main>
-        <input type="text" id="nome" name="nome" class="nome" placeholder="Digite o nome do Pokémon">
-        <button type="submit" id="botao" class="botao" onclick=pesquise()>Buscar</button>
+        <div class="buscar">
+            <button class="voltar">
+                <a href="./index.html" class="botaoVoltar">
+                    Voltar
+                </a>
+            </button>
+            <input type="text" id="nome" name="nome" class="nome" placeholder="Digite o nome do Pokémon">
+            <button type="submit" id="botao" class="botao" onclick=pesquise()>Buscar</button>
+        </div>
 
         <div id="cards" class="cards">
         </div>
     </main>
-
-    <footer>
-        <div class="voltar">
-            <a href="./index.html" class="voltarInicio">
-                Voltar
-            </a>
-        </div>
-    </footer>
 
 </body>
 </html>
