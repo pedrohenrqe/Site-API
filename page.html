@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/pokebola.jpg">
+    <script src="./main.js" defer></script>
+    <title>Pokémon - API</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./img/logo.png" alt="" class="logo">
+    </header>
+
+    <main>
+        <input type="text" id="nome" name="nome" class="nome" placeholder="Digite o nome do Pokémon">
+        <button type="submit" id="botao" class="botao" onclick=pesquise()>Buscar</button>
+
+        <div id="cards" class="cards">
+        </div>
+    </main>
+
+    <footer>
+        <div class="voltar">
+            <a href="./index.html" class="voltarInicio">
+                Voltar
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

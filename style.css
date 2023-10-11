@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #EBD666;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: #0090F9;
+}
+
+.logo {
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.nome {
+    width: 300px;
+    font-size: 1.2rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.botao {
+    width: 100px;
+    font-size: 1.2rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.cards {
+    width: 50%;
+    display: grid;
+    margin-top: 60px;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    overflow: hidden;
+    transition: transform 0.3s; 
+}
+
+.card:hover {
+    transform: scale(1.1); 
+}
+
+.voltar {
+    position: relative;
+}
+
+.voltarInicio {
+    margin: 30px auto;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0090F9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 20px;    
+}
