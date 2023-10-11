@@ -31,6 +31,8 @@ Esta é uma aplicação web utiliza a Api do Pokémon TCG Developers para pesqui
 ## Exemplos de Interações com o Usuário
 
 - Pesquisa do Pokémon: Digite o nome de um pokémon na caixa de pesquisa e clique em "Buscar" para ver os resultados correspondentes.
+- Ao clicar no botão de "Buscar" e não estiver nada escrito, vai retornar um mensagem escrita "Pokémon não encontrado".
+- Ao lado do campo de pesquisa temos o botão "Voltar" que ao clicar redireciona para o Menu.
 
 - ## Link do Figma
 
