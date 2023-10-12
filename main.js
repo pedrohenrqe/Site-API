@@ -1,6 +1,7 @@
 'use strict'
 
 const listEl = document.getElementById('cards');
+const pokemonNaoEncontrado = document.getElementById('aviso');
 
 const pesquise = () => {
     const nome = document.querySelector('#nome').value
@@ -9,10 +10,13 @@ const pesquise = () => {
 }
 
 const buscarPokemon = (nome) => {
+    listEl.innerHTML = '';
+    pokemonNaoEncontrado.innerHTML = '';
+
     const URL = "https://api.pokemontcg.io/v1/cards?name="
 
     if (nome.trim() === '') {
-        listEl.innerHTML = 'Pokémon não encontrado';
+        pokemonNaoEncontrado.innerHTML = 'Digite o nome de um Pokémon';
         return;
     }
 
@@ -23,12 +27,17 @@ const buscarPokemon = (nome) => {
         false);
     Httpreq.send(null);
 
-    listEl.innerHTML = '';
+    
 
     if (Httpreq.status === 200) {
-        var responseData = JSON.parse(Httpreq.responseText);
-        if (responseData.cards && Array.isArray(responseData.cards)) {
-            responseData.cards.forEach(item => {
+        var arrayPokemon = JSON.parse(Httpreq.responseText);
+        console.log(arrayPokemon.cards.length)
+        
+        if (arrayPokemon.cards.length == 0) {
+            pokemonNaoEncontrado.innerHTML = 'Pokémon não encontrado';
+        } else if 
+        (arrayPokemon.cards && Array.isArray(arrayPokemon.cards)) {
+            arrayPokemon.cards.forEach(item => {
                 listEl.insertAdjacentHTML('beforeend', `
                     <div class='card'>
                         <div class="card-img">
