@@ -27,12 +27,13 @@ Esta é uma aplicação web utiliza a Api do Pokémon TCG Developers para pesqui
 
 3. **Guia Pokémon TCG:**
 
-   - Na página inicial você verá outro botão escrito "Guia Pokémon TCG", ao clicar você será redirecionado para um site explicando as regras e a forma de jogo
+   - Na página inicial você verá outro botão escrito "Guia Pokémon TCG", ao clicar você será redirecionado para um site explicando as regras e a forma de jogo.
 
 ## Exemplos de Interações com o Usuário
 
 - Pesquisa do Pokémon: Digite o nome de um pokémon na caixa de pesquisa e clique em "Buscar" para ver os resultados correspondentes.
-- Ao clicar no botão de "Buscar" e não estiver nada escrito, vai retornar um mensagem escrita "Pokémon não encontrado".
+- Ao clicar no botão de "Buscar" e não estiver nada escrito, aparece uma mensagem escrita "Pokémon não encontrado".
+- Ao clicar no botão de "Buscar" e na caixa de pesquisa não tiver nenhum nome, aparece uma mensagem escrita "Digite o nome de um Pokémon".
 - Ao lado do campo de pesquisa temos o botão "Voltar" que ao clicar redireciona para o Menu.
 
 - ## Link do Figma
